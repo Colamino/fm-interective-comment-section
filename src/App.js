@@ -1,23 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Comments from "./components/Comments";
+import CurrentUserC from "./components/currentUserC/CurrentUserC";
+import Modal from "./components/modal/Modal";
+import dataJson from "./data.json";
 
 function App() {
+  const [data, setData] = useState(dataJson);
+  const [selectedC, setSelectC] = useState("");
+  const [selectedR, setSelectR] = useState("");
+  const [deleteMode, setDeleteMode] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {deleteMode && (
+        <Modal
+          setDeleteMode={setDeleteMode}
+          selectedC={selectedC}
+          selectedR={selectedR}
+          setData={setData}
+          data={data}
+          setSelectR={setSelectR}
+          setSelectC={setSelectC}
+        />
+      )}
+      {data?.comments?.map((comment) => (
+        <Comments
+          key={comment?.id}
+          id={comment?.id}
+          userImg={comment?.user?.image?.png}
+          username={comment?.user?.username}
+          createAt={comment?.createdAt}
+          content={comment?.content}
+          scores={comment?.score}
+          replies={comment?.replies}
+          data={data}
+          setData={setData}
+          setDeleteMode={setDeleteMode}
+          setSelectC={setSelectC}
+          setSelectR={setSelectR}
+        />
+      ))}
+      <CurrentUserC setData={setData} />
     </div>
   );
 }

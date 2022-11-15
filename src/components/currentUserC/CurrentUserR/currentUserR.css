@@ -1,0 +1,54 @@
+.currentUserR .currentUserC {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--neutral-white);
+  border-radius: 10px;
+  padding: 1.5rem;
+
+  max-width: 44rem;
+  min-width: 44rem;
+
+  margin-top: 1.5rem;
+}
+
+
+@media screen and (max-width:850px) {
+  
+  .currentUserR .currentUserC {
+    max-width: 36rem;
+    min-width: 36rem;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width:680px) {
+  
+  .currentUserR .currentUserC {
+    min-width: 28.9rem;
+    max-width: 28.9rem;
+
+    margin-left: 0;
+    position: relative;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .currentUserR .currentUserC img {
+    right: 12rem;
+  }
+
+  
+
+ 
+}
+
+@media screen and (max-width: 520px) {
+  .currentUserR .currentUserC {
+    margin-left: 0;
+    margin-right: 0;
+
+    min-width: 80vw;
+   }
+}

@@ -1,0 +1,138 @@
+.currentUserC {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--neutral-white);
+  border-radius: 10px;
+  padding: 1.5rem;
+
+  max-width: 50rem;
+  min-width: 50rem;
+
+  margin-top: 1.5rem;
+}
+
+.currentUserC img {
+  width: 45px;
+  height: 45px;
+}
+
+.currentUserC textarea {
+  padding: 10px 20px;
+  border: 1px solid var(--neutral-light-gray);
+  resize: none;
+  border-radius: 5px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  width: 100%;
+
+  min-height: 120px;
+  margin: 0 20px;
+} 
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.currentUserC button {
+  width: 7rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-moderate-blue);
+  color: var(--neutral-light-gray);
+  text-transform: uppercase;
+  font-weight: 600;
+
+  cursor: pointer;
+
+}
+
+@media screen and (max-width: 850px) {
+  .currentUserC {
+
+    max-width: 40rem;
+    min-width: 40rem;
+
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .currentUserC {
+
+    max-width: 30rem;
+    min-width: 30rem;
+
+    flex-direction: column-reverse;
+    position: relative;
+   align-items: center;
+  
+    padding: 1rem;
+    padding-bottom: 4.5rem;
+  }
+  
+  .currentUserC img {
+    width: 40px;
+    height: 40px;
+    margin-top: .5rem;
+
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    
+  }
+  
+  .currentUserC textarea {
+    padding: 10px 20px;
+    border: 1px solid var(--neutral-light-gray);
+    resize: none;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    font-size: 16px;
+    width: 100%;
+  
+    min-height: 90px;
+    margin: 0 20px;
+  } 
+  
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .currentUserC button {
+    width: 7rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary-moderate-blue);
+    color: var(--neutral-light-gray);
+    text-transform: uppercase;
+    font-weight: 600;
+  
+    cursor: pointer;
+
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .currentUserC {
+    min-width:100%;
+    max-width:max-content;
+    margin-left: 0;
+    margin-right: 0;
+
+   }
+
+
+
+  
+}

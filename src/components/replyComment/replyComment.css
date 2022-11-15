@@ -1,0 +1,50 @@
+
+.reply .comments {
+  display: flex;
+  background-color: var(--neutral-white);
+  margin-top: 1.5rem;
+  border-radius: 10px;
+
+
+  padding: 1.5rem;
+  min-width: 44rem;
+  max-width: 44rem;
+}
+
+.reply .comments-content-bottom span {
+  color: var(--primary-moderate-blue);
+  font-weight: 600;
+}
+
+
+@media screen and (max-width: 850px) {
+  .reply .comments {
+    display: flex;
+    background-color: var(--neutral-white);
+    margin-top: 1rem;
+    border-radius: 10px;
+  
+  
+    padding: 1.5rem;
+    min-width: 36rem;
+    max-width: 36rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .reply .comments {
+    min-width: 28.9rem;
+    max-width: 28.9rem;
+
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .reply .comments {
+    margin-left: 0;
+    margin-right: 0;
+
+    min-width: 80vw;
+   }
+}
