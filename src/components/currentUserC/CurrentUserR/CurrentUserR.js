@@ -5,7 +5,7 @@ function CurrentUserR({ setNewReply, newReply, replyComment }) {
   return (
     <div className="currentUserR">
       <div className="currentUserC">
-        <img src="/images/avatars/image-juliusomo.png" alt="" />
+        <img src="./images/avatars/image-juliusomo.png" alt="" />
         <textarea
           placeholder="Add a comment..."
           onChange={(e) => setNewReply(e.target.value)}

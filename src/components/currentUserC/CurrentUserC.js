@@ -36,7 +36,7 @@ function CurrentUserC({ setData }) {
   };
   return (
     <div className="currentUserC">
-      <img src="/images/avatars/image-juliusomo.png" alt="" />
+      <img src="./images/avatars/image-juliusomo.png" alt="" />
       <textarea
         placeholder="Add a comment..."
         onChange={(e) => setNewComment(e.target.value)}

@@ -127,11 +127,11 @@ function ReplyComment({
       <div className="comments">
         <div className="comments-scores">
           <div className="score-div" onClick={plusScore}>
-            <img src="/images/icons/icon-plus.svg" alt="plus" />
+            <img src="./images/icons/icon-plus.svg" alt="plus" />
           </div>
           <p>{score}</p>
           <div className="score-div" onClick={minusScore}>
-            <img src="/images/icons/icon-minus.svg" alt="minus" />
+            <img src="./images/icons/icon-minus.svg" alt="minus" />
           </div>
         </div>
         <div className="comments-content">
@@ -153,20 +153,20 @@ function ReplyComment({
                     setSelectR(replyId);
                   }}
                 >
-                  <img src="/images/icons/icon-delete.svg" alt="" />
+                  <img src="./images/icons/icon-delete.svg" alt="" />
                   <p>Delete</p>
                 </div>
                 <div
                   className="editFunc"
                   onClick={() => setEditMode((prev) => !prev)}
                 >
-                  <img src="/images/icons/icon-edit.svg" alt="" />
+                  <img src="./images/icons/icon-edit.svg" alt="" />
                   <p>Edit</p>
                 </div>
               </div>
             ) : (
               <div className="comments-reply_icon" onClick={replyToggle}>
-                <img src="/images/icons/icon-reply.svg" alt="" />
+                <img src="./images/icons/icon-reply.svg" alt="" />
                 <p>reply</p>
               </div>
             )}
