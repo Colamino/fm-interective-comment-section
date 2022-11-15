@@ -73,8 +73,8 @@ function Comments({
               replyingTo: username,
               user: {
                 image: {
-                  png: "/images/avatars/image-juliusomo.png",
-                  webp: "/images/avatars/image-juliusomo.webp",
+                  png: "./images/avatars/image-juliusomo.png",
+                  webp: "./images/avatars/image-juliusomo.webp",
                 },
                 username: "juliusomo",
               },
